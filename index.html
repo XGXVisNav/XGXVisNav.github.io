@@ -1,0 +1,165 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Exploitation-Guided Exploration for Semantic Embodied Navigation">
+  <meta name="keywords" content="XGX, embodied-AI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exploitation-Guided Exploration for Semantic Embodied Navigation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Exploitation-Guided Exploration for Semantic Embodied Navigation</h1>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+
+<!--            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <div class="images">
+        <video id="teaser" autoplay controls muted loop playsinline>
+            <source src="./vids/rollout_real.mp4"
+                    type="video/mp4">
+     </video>
+ <!--     <img src='./images/table.png'> -->
+    </div>
+   <!-- <div class="images">
+        <video id="teaser" autoplay controls muted loop playsinline>
+            <source src="./vids/sim_rollout.mp4"
+                    type="video/mp4">
+     </video>
+      <img src='./images/table.png'> -->
+    </div> 
+    </div>
+  </div>
+</section>
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In the recent progress in embodied navigation and
+            sim-to-robot transfer, modular policies have emerged as a
+            de facto framework. However, there is more to
+            compositionality beyond the decomposition of the learning
+            load into modular components. In this work, we investigate
+            a principled way to syntactically combine these components.
+            Particularly, we propose Exploitation-Guided Exploration
+            (XGX) where separate modules for exploration and
+            exploitation come together in a novel and intuitive manner.
+            We configure the exploitation module to take over in the
+            deterministic final steps of navigation i.e. when the goal
+            becomes visible. Crucially, an exploitation module
+            teacher-forces the exploration module and continues driving
+            an overridden policy optimization. 
+            XGX, with effective decomposition and novel guidance,
+            improves the state-of-the-art performance on the
+            challenging object navigation task from 70% to 73%. Along
+            with better accuracy, through targeted analysis, we show
+            that XGX is also more efficient at goal-conditioned
+            exploration. Finally, we show sim-to-real transfer to robot
+            hardware and XGX performs over two-fold better than the
+            best baseline from simulation benchmarking. 
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">XGX</h2>
+        <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+          <source src="./vids/motivation_video_website.mp4"
+                  type="video/mp4"> 
+      </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Real World Policy Transfer Behaviors</h2>
+        <h3 class="title is-4">Peaking Behavior</h3>
+        Both in simulation (left) and the real world (right), the policy exhibits a "peaking" behavior, where the robot quickly enters a room, looks around, and leaves if there are no semantic cues towards the goal.
+        <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+            <source src="./vids/peak.mp4"
+                    type="video/mp4"> 
+        </video>
+      <h3 class="title is-4">Obstacle Avoidance Behavior</h3>
+      Another behavior that transfered was obstacle avoidance. Both in simulation (left) and the real world (right), the robot avoids collisions with obstacles.
+      <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+          <source src="./vids/ob_dodge.mp4"
+                  type="video/mp4"> 
+      </video>
+    </div>
+
+    </div>
+    </div>
+  </div>
+</section>
+<p>
+<a
+  href="https://github.com/nerfies/nerfies.github.io">Website source code</a>
+</p>
