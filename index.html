@@ -89,6 +89,7 @@
                   <span>Code</span>
                   </a>
               </span>
+              <hr>
 <!--            </div>
           </div>
               <!-- PDF Link. -->
@@ -175,11 +176,48 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h1 class="title is-3">Real World Results</h1>
+        <h1 class="title is-3">Simulation Results</h1>
+        In simulated results using AiHabitat, we acheive state-of-the-art performance on the object-goal task. <br>
+        <img src="./images/table.png" alt="Performance in AiHabitat Object-Goal Task" style="width: 66%;">
+         <br> <br> <br>
+        Furthermore, XGX was more effective at exploring the environment than the previous state-of-the-art baselines.. <br>
+        <img src="./images/explore.png" alt="Performance in AiHabitat Object-Goal Task" style="width: 40%;">
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h1 class="title is-2">Real World Results</h1>
+        <h3 class="title is-4">Robot Morphology</h3>
+        The robot morphology is given below, some notable key features in the wheeled robot include:
+        (1) Four independent trains
+        (2) LIDAR for autonomy and mapping
+        (3) Zero radius turns help us in the policy transfer <br>
+        <img src="./images/robot.png" alt="Robot" style="width: 100%;">
+        <hr>
+        <br><br><br>
+        <h3 class="title is-4">Real-World Object-Goal Navigation Results</h3>
+        XGX outperforms the relevent baselines and performed the best after sim-to-real transfer of the policies. <br>
+        <img src="./images/real_table.png" alt="Performance in AiHabitat Object-Goal Task" style="width: 50%;">
+        <br><br><br>
+        <h3 class="title is-4">Example Real-World Rollout</h3>
+        Below is an example rollout collected in the real-world. The agent needs to arrive the potted plant that is multiple rooms away from the starting location.
         <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
           <source src="./vids/rollout_real.mp4"
                   type="video/mp4"> 
       </video>
+      <br><br><br>
+      <h3 class="title is-4">Without Adjusting for Robot Parameters, Sim-to-Real Fails!</h3>
+      Below is an example rollout where the Pirlnav checkpoint is directly deployed onto our robot. We find that this direct deployment fails due to the sim-to-real gap as well as differences in the physical embodiment of the robot. The object-goal in this example is a chair. <br> 
+      <video id="dollyzoom" autoplay controls muted loop playsinline width="75%">
+        <source src="./vids/pirl_clean.mp4"
+                type="video/mp4"> 
+    </video>
       </div>
     </div>
   </div>
@@ -195,7 +233,7 @@
             <source src="./vids/peak.mp4"
                     type="video/mp4"> 
         </video>
-        <hr>
+        <br><br>
       <h3 class="title is-4">Real World Policy Sim2Real Transfer: Obstacle Avoidance Behavior</h3>
       Another behavior that transfered was obstacle avoidance. Both in simulation (left) and the real world (right), the robot avoids collisions with obstacles.
       <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
